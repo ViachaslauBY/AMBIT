@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>AMBIT — Стабильность, создающая комфорт</title>
+  <meta name="description"
+    content="Системная целостность инженерных систем. Комфорт как естественное состояние пространства.">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AMBIT — Инженерные системы">
+  <meta property="og:description" content="Стабильность, создающая комфорт.">
+  <meta property="og:image" content="img/og-image.jpg">  
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/main.js" defer></script>
+</head>
+
+<body class="page">
+  <!-- <a href="#main-content" class="page__skip-link">Перейти к основному контенту</a> -->  
+  <header class="header" role="banner">
+    <div class="container header__container">    
+      <a href="/" class="header__logo" aria-label="AMBIT — на главную">
+        <img class="logo" src="img/header/logo.png" alt=" логотип AMBIT">
+      </a>
+
+      <!-- Навигация (десктоп) -->
+      <nav class="nav header__nav" aria-label="Основная навигация">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#about" class="nav__link">О нас</a></li>
+          <li class="nav__item"><a href="#news" class="nav__link">Новости</a></li>
+          <li class="nav__item"><a href="#download" class="nav__link">Скачать</a></li>
+          <li class="nav__item"><a href="#catalog" class="nav__link">Каталог</a></li>
+          <li class="nav__item"><a href="#buy" class="nav__link">Купить</a></li>
+        </ul>
+      </nav>
+
+      <!-- Поиск + Бургер -->
+      <div class="header__actions">
+        <button class="header__search" type="button" aria-label="Открыть поиск">
+          <img class="search" src="img/header/search.png" alt="Search">
+        </button>
+
+        <button class="burger header__burger" type="button" aria-label="Открыть меню" aria-expanded="false"
+          aria-controls="mobile-menu">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+      </div>
+
+      <!-- Overlay для затемнения фона -->
+      <div class="header__overlay" id="mobile-overlay" aria-hidden="true"></div>
+      
+      <!-- Мобильное меню -->
+      <div class="header__mobile-menu" id="mobile-menu" aria-hidden="true">
+        <nav class="mobile-menu__nav" aria-label="Мобильная навигация">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item"><a href="#about" class="mobile-menu__link">О нас</a></li>
+            <li class="mobile-menu__item"><a href="#news" class="mobile-menu__link">Новости</a></li>
+            <li class="mobile-menu__item"><a href="#download" class="mobile-menu__link">Скачать</a></li>
+            <li class="mobile-menu__item"><a href="#catalog" class="mobile-menu__link">Каталог</a></li>
+            <li class="mobile-menu__item"><a href="#buy" class="mobile-menu__link">Купить</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+  </header>
+
+  <main id="main-content" class="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__container">
+    
+        <!-- Слайдер -->
+        <div class="hero__slider" aria-live="polite">
+    
+          <!-- Трек со слайдами -->
+          <div class="hero__slider-track">
+    
+            <!-- Слайд 1 -->
+            <div class="hero__slide" role="group" aria-roledescription="slide" aria-label="Слайд 1 из 3">
+              <div class="hero__slide-inner">
+                <div class="hero__content">
+                  <h1 id="hero-title" class="hero__title">
+                    Стабильность<span class="hero__comma">,</span><br>
+                    создающая<br>
+                    комфорт
+                  </h1>
+                  <p class="hero__description">
+                    Системная целостность инженерных систем сохраняет среду в заданных параметрах, делая комфорт
+                    естественным состоянием пространства.
+                  </p>
+                </div>
+                <div class="hero__image-wrapper">
+                  <img src="img/hero/hero-1.png" alt="Серверная комната с инженерными системами" class="hero__image" width="800"
+                    height="600" loading="eager">
+                </div>
+              </div>
+            </div>
+    
+            <!-- Слайд 2 -->
+            <div class="hero__slide" role="group" aria-roledescription="slide" aria-label="Слайд 1 из 3">
+              <div class="hero__slide-inner">
+                <div class="hero__content">
+                  <h1 id="hero-title" class="hero__title">
+                    Стабильность<span class="hero__comma">,</span><br>
+                    создающая<br>
+                    комфорт
+                  </h1>
+                  <p class="hero__description">
+                    Системная целостность инженерных систем сохраняет среду в заданных параметрах, делая комфорт
+                    естественным состоянием пространства.
+                  </p>
+                </div>
+                <div class="hero__image-wrapper">
+                  <img src="img/hero/hero-1.png" alt="Серверная комната с инженерными системами" class="hero__image" width="800"
+                    height="600" loading="eager">
+                </div>
+              </div>
+            </div>
+    
+            <!-- Слайд 3 -->
+            <div class="hero__slide" role="group" aria-roledescription="slide" aria-label="Слайд 1 из 3">
+              <div class="hero__slide-inner">
+                <div class="hero__content">
+                  <h1 id="hero-title" class="hero__title">
+                    Стабильность<span class="hero__comma">,</span><br>
+                    создающая<br>
+                    комфорт
+                  </h1>
+                  <p class="hero__description">
+                    Системная целостность инженерных систем сохраняет среду в заданных параметрах, делая комфорт
+                    естественным состоянием пространства.
+                  </p>
+                </div>
+                <div class="hero__image-wrapper">
+                  <img src="img/hero/hero-1.png" alt="Серверная комната с инженерными системами" class="hero__image" width="800"
+                    height="600" loading="eager">
+                </div>
+              </div>
+            </div>
+    
+          </div>
+    
+          <!-- Стрелки навигации (PNG) -->
+          <button class="hero__arrow hero__arrow--prev" type="button" aria-label="Предыдущий слайд">
+            <img src="img/hero/arrow-left.png" alt="" width="24" height="24" class="hero__arrow-img" aria-hidden="true">
+          </button>
+          <button class="hero__arrow hero__arrow--next" type="button" aria-label="Следующий слайд">
+            <img src="img/hero/arrow-right.png" alt="" width="24" height="24" class="hero__arrow-img" aria-hidden="true">
+          </button>
+    
+        </div>
+    
+        <!-- Панель под слайдером -->
+        <div class="hero__panel">
+          <div class="hero__panel-left">
+            <a href="#news" class="hero__news-link">Новости</a>
+            <a href="#approach" class="button button--primary hero__cta">
+              Изучить подход
+              <svg class="button__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+          <div class="hero__panel-right">
+            <a href="tel:+78001234567" class="hero__contact-link" aria-label="Позвонить">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+              </svg>
+            </a>
+            <a href="mailto:info@ambit.ru" class="hero__contact-link" aria-label="Написать на почту">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+            <a href="#" class="hero__contact-link" aria-label="Telegram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+              </svg>
+            </a>
+            <a href="#" class="hero__contact-link" aria-label="WhatsApp">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+    
+      </div>
+    </section>
+
+    <section class="approach" aria-labelledby="approach-title">
+      <div class="container approach__container">
+    
+        <!-- Картинка слева -->
+        <div class="approach__image-wrapper">
+          <img src="img/approach/approach.png" alt="Современное здание с фасадом из стекла и металла" class="approach__image"
+            width="800" height="500" loading="lazy">
+        </div>
+    
+        <!-- Текст справа -->
+        <div class="approach__content">
+          <h2 id="approach-title" class="approach__title">
+            Наш подход<br>
+            к созданию комфорта
+          </h2>
+          <p class="approach__text">
+            Комфорт формируется как результат устойчивой работы инженерной среды. Он возникает не как отдельная цель, а как
+            следствие корректно организованных процессов.
+          </p>
+          <p class="approach__text">
+            Инженерная система рассматривается как часть общей структуры пространства и влияет на его функционирование в
+            целом.
+          </p>
+        </div>
+    
+      </div>
+    </section>
+
+    <section class="features" aria-labelledby="features-title">
+      <div class="container features__container">
+    
+        <h2 id="features-title" class="visually-hidden">Наши преимущества</h2>
+    
+        <div class="features__list">
+    
+          <!-- Карточка 1 -->
+          <div class="feature-card">
+            <div class="feature-card__icon-wrapper">
+              <svg class="feature-card__icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Понимание задач</h3>
+            <p class="feature-card__text">
+              Работа начинается с анализа объекта и условий его эксплуатации. Фиксируются сценарии использования и
+              требования к инженерной среде.
+            </p>
+          </div>
+    
+          <!-- Карточка 2 -->
+          <div class="feature-card">
+            <div class="feature-card__icon-wrapper">
+              <svg class="feature-card__icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="3" width="7" height="7"></rect>
+                <rect x="14" y="3" width="7" height="7"></rect>
+                <rect x="3" y="14" width="7" height="7"></rect>
+                <rect x="14" y="14" width="7" height="7"></rect>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Согласованность систем</h3>
+            <p class="feature-card__text">
+              Инженерные решения связываются в единую структуру. Исключаются конфликты между элементами инфраструктуры.
+            </p>
+          </div>
+    
+          <!-- Карточка 3 -->
+          <div class="feature-card">
+            <div class="feature-card__icon-wrapper">
+              <svg class="feature-card__icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path
+                  d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                </path>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Точность реализации</h3>
+            <p class="feature-card__text">
+              Проектные параметры переносятся в реализацию без отклонений. Качество исполнения определяет корректность
+              работы системы.
+            </p>
+          </div>
+    
+          <!-- Карточка 4 -->
+          <div class="feature-card">
+            <div class="feature-card__icon-wrapper">
+              <svg class="feature-card__icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Сопровождение на всех этапах</h3>
+            <p class="feature-card__text">
+              Проект ведётся через весь цикл — от разработки до ввода в эксплуатацию. Логика решений сохраняется в процессе
+              реализации.
+            </p>
+          </div>
+    
+          <!-- Карточка 5 -->
+          <div class="feature-card">
+            <div class="feature-card__icon-wrapper">
+              <svg class="feature-card__icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                <path
+                  d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z">
+                </path>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Поддержка и контроль</h3>
+            <p class="feature-card__text">
+              После запуска фиксируются рабочие параметры системы. При необходимости выполняется корректировка эксплуатации.
+            </p>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+
+    <section class="solutions" aria-labelledby="solutions-title">
+      <div class="container solutions__container">
+    
+        <!-- Содержимое табов -->
+        <div class="solutions__tabs-content">
+    
+          <!-- Таб 1: Все решения -->
+          <div class="solutions-tab solutions-tab--active" id="tab-all" role="tabpanel" aria-labelledby="link-all">
+            <div class="solutions-tab__stats">
+              <div class="stat-item">
+                <span class="stat-item__value">15+</span>
+                <span class="stat-item__label">лет опыта</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-item__value">250+</span>
+                <span class="stat-item__label">реализованных объектов</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-item__value">100+</span>
+                <span class="stat-item__label">инженеров и специалистов</span>
+              </div>
+            </div>
+    
+            <div class="solutions-tab__info">
+              <div class="solutions-tab__text-content">
+                <a href="#" class="solutions-tab__link">Смотреть решения</a>
+                <h2 id="solutions-title" class="solutions-tab__title">Решения для разных задач</h2>
+                <p class="solutions-tab__description">
+                  Инженерные решения формируются под условия конкретного объекта и сценарии его эксплуатации. Коммерческая,
+                  промышленная и инфраструктурная недвижимость отличаются характером нагрузок и требованиями к инженерной
+                  логике.
+                </p>
+              </div>
+              <div class="solutions-tab__image-wrapper">
+                <img src="img/solutions-1.jpg" alt="Серверное оборудование и инженерные системы"
+                  class="solutions-tab__image" width="600" height="450" loading="lazy">
+              </div>
+            </div>
+          </div>
+    
+          <!-- Таб 2: Коммерческие объекты -->
+          <div class="solutions-tab" id="tab-commercial" role="tabpanel" aria-labelledby="link-commercial">
+            <div class="solutions-tab__stats">
+              <div class="stat-item">
+                <span class="stat-item__value">50+</span>
+                <span class="stat-item__label">бизнес-центров</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-item__value">30+</span>
+                <span class="stat-item__label">ТЦ и ритейла</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-item__value">98%</span>
+                <span class="stat-item__label">эффективность</span>
+              </div>
+            </div>
+    
+            <div class="solutions-tab__info">
+              <div class="solutions-tab__text-content">
+                <a href="#" class="solutions-tab__link">Подробнее о коммерции</a>
+                <h2 class="solutions-tab__title">Коммерческие объекты</h2>
+                <p class="solutions-tab__description">
+                  Создание комфортной среды для посетителей и сотрудников. Оптимизация энергопотребления и гибкое управление
+                  климатом в зданиях любого назначения.
+                </p>
+              </div>
+              <div class="solutions-tab__image-wrapper">
+                <img src="img/solutions-2.jpg" alt="Коммерческий объект, вентиляция" class="solutions-tab__image"
+                  width="600" height="450" loading="lazy">
+              </div>
+            </div>
+          </div>
+    
+          <!-- Таб 3: Промышленность -->
+          <div class="solutions-tab" id="tab-industrial" role="tabpanel" aria-labelledby="link-industrial">
+            <div class="solutions-tab__stats">
+              <div class="stat-item">
+                <span class="stat-item__value">100+</span>
+                <span class="stat-item__label">заводов</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-item__value">0</span>
+                <span class="stat-item__label">аварий</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-item__value">24/7</span>
+                <span class="stat-item__label">мониторинг</span>
+              </div>
+            </div>
+    
+            <div class="solutions-tab__info">
+              <div class="solutions-tab__text-content">
+                <a href="#" class="solutions-tab__link">Промышленные решения</a>
+                <h2 class="solutions-tab__title">Промышленность</h2>
+                <p class="solutions-tab__description">
+                  Надежные системы для производственных процессов. Контроль параметров среды, безопасность и бесперебойная
+                  работа оборудования.
+                </p>
+              </div>
+              <div class="solutions-tab__image-wrapper">
+                <img src="img/solutions-3.jpg" alt="Промышленное оборудование" class="solutions-tab__image" width="600"
+                  height="450" loading="lazy">
+              </div>
+            </div>
+          </div>
+    
+        </div>
+    
+        <!-- Навигация табов -->
+        <div class="solutions__tabs-nav" role="tablist" aria-label="Категории решений">
+          <button class="solutions__tab-link solutions__tab-link--active" id="link-all" role="tab" aria-controls="tab-all"
+            aria-selected="true" tabindex="0">
+            Все решения
+          </button>
+          <button class="solutions__tab-link" id="link-commercial" role="tab" aria-controls="tab-commercial"
+            aria-selected="false" tabindex="-1">
+            Коммерческие объекты
+          </button>
+          <button class="solutions__tab-link" id="link-industrial" role="tab" aria-controls="tab-industrial"
+            aria-selected="false" tabindex="-1">
+            Промышленность
+          </button>
+          <button class="solutions__tab-link" id="link-infra" role="tab" aria-controls="tab-infra" aria-selected="false"
+            tabindex="-1">
+            Инфраструктура
+          </button>
+        </div>
+    
+      </div>
+    </section>
+
+    <section class="products" aria-labelledby="products-title">
+      <div class="container products__container">
+    
+        <h2 id="products-title" class="visually-hidden">Каталог продукции</h2>
+    
+        <div class="products__list">
+    
+          <!-- Карточка 1 -->
+          <article class="product-card">
+            <div class="product-card__image-wrapper">
+              <img src="img/products/products-1.png" alt="Презентационные кондиционеры в серверной" class="product-card__image"
+                width="400" height="300" loading="lazy">
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__title">Презентационные кондиционеры</h3>
+              <p class="product-card__text">
+                Стабильный микроклимат для технологических и чувствительных процессов.
+              </p>
+              <a href="#" class="product-card__link">
+                Подробнее
+                <svg class="product-card__link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+    
+          <!-- Карточка 2 -->
+          <article class="product-card">
+            <div class="product-card__image-wrapper">
+              <img src="img/products/products-2.png" alt="Центральные кондиционеры с вентиляторами" class="product-card__image"
+                width="400" height="300" loading="lazy">
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__title">Центральные кондиционеры</h3>
+              <p class="product-card__text">
+                Поддержка комфортных параметров воздуха в зданиях любого назначения.
+              </p>
+              <a href="#" class="product-card__link">
+                Подробнее
+                <svg class="product-card__link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+    
+          <!-- Карточка 3 -->
+          <article class="product-card">
+            <div class="product-card__image-wrapper">
+              <img src="img/products/products-3.png" alt="Чиллеры с воздушным охлаждением" class="product-card__image" width="400"
+                height="300" loading="lazy">
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__title">Чиллеры с воздушным охлаждением</h3>
+              <p class="product-card__text">
+                Высокоэффективное решение для систем холодоснабжения коммерческих и промышленных объектов.
+              </p>
+              <a href="#" class="product-card__link">
+                Подробнее
+                <svg class="product-card__link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+    
+        </div>
+    
+        <!-- Кнопка каталога -->
+        <div class="products__footer">
+          <a href="#catalog" class="button button--primary products__catalog-btn">
+            Смотреть весь каталог
+            <svg class="button__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+    
+      </div>
+    </section>
+
+    <section class="news" aria-labelledby="news-title">
+      <div class="container news__container">
+    
+        <!-- Верхняя панель -->
+        <div class="news__header">
+          <div class="news__header-left">
+            <button class="news__all-link" type="button" data-filter="all">Все новости</button>
+          </div>
+    
+          <div class="news__header-center">
+            <span class="news__sort-label">Сортировать:</span>
+            <button class="news__sort-btn news__sort-btn--active" type="button">по дате</button>
+            <button class="news__sort-btn" type="button">по популярности</button>
+          </div>
+    
+          <div class="news__header-right">
+            <button class="news__view-btn news__view-btn--active" type="button" data-view="grid">Сетка</button>
+            <button class="news__view-btn" type="button" data-view="list">Список</button>
+          </div>
+        </div>
+    
+        <!-- Основной контент -->
+        <div class="news__body">
+    
+          <!-- Левое меню фильтров -->
+          <aside class="news__filters">
+            <ul class="news__filter-list">
+              <li>
+                <button class="news__filter-btn news__filter-btn--active" type="button" data-filter="all">
+                  Все новости
+                </button>
+              </li>
+              <li>
+                <button class="news__filter-btn" type="button" data-filter="projects">
+                  Проекты
+                </button>
+              </li>
+              <li>
+                <button class="news__filter-btn" type="button" data-filter="technologies">
+                  Технологии
+                </button>
+              </li>
+              <li>
+                <button class="news__filter-btn" type="button" data-filter="products">
+                  Продукты
+                </button>
+              </li>
+              <li>
+                <button class="news__filter-btn" type="button" data-filter="company">
+                  Компания
+                </button>
+              </li>
+              <li>
+                <button class="news__filter-btn" type="button" data-filter="events">
+                  События
+                </button>
+              </li>
+              <li>
+                <button class="news__filter-btn" type="button" data-filter="partnerships">
+                  Партнёрства
+                </button>
+              </li>
+              <li>
+                <button class="news__filter-btn" type="button" data-filter="press">
+                  Пресса о нас
+                </button>
+              </li>
+            </ul>
+          </aside>
+    
+          <!-- Контент новостей -->
+          <div class="news__content">
+    
+            <!-- Режим СЕТКА: карточки -->
+            <div class="news__grid">
+    
+              <!-- Карточка 1: Проекты -->
+              <article class="news-card" data-category="projects">
+                <div class="news-card__image-wrapper">
+                  <img src="img/news-1.jpg" alt="Завершён проект инженерных систем для бизнес центра"
+                    class="news-card__image" width="400" height="300" loading="lazy">
+                </div>
+                <div class="news-card__content">
+                  <h3 class="news-card__title">Завершён проект инженерных систем для бизнес центра</h3>
+                  <p class="news-card__text">
+                    Реализована система холодоснабжения и вентиляции с применением чиллеров последнего поколения.
+                  </p>
+                  <a href="#" class="news-card__link">
+                    Подробнее
+                    <svg class="news-card__link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      aria-hidden="true">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+    
+              <!-- Карточка 2: Технологии -->
+              <article class="news-card" data-category="technologies">
+                <div class="news-card__image-wrapper">
+                  <img src="img/news-2.jpg" alt="Внедрение новых технологий в инженерных системах" class="news-card__image"
+                    width="400" height="300" loading="lazy">
+                </div>
+                <div class="news-card__content">
+                  <h3 class="news-card__title">Внедрение новых технологий в инженерных системах</h3>
+                  <p class="news-card__text">
+                    Использование интеллектуальных систем управления для оптимизации энергопотребления.
+                  </p>
+                  <a href="#" class="news-card__link">
+                    Подробнее
+                    <svg class="news-card__link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      aria-hidden="true">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+    
+              <!-- Карточка 3: Продукты -->
+              <article class="news-card" data-category="products">
+                <div class="news-card__image-wrapper">
+                  <img src="img/news-3.jpg" alt="Новая линейка промышленных кондиционеров" class="news-card__image"
+                    width="400" height="300" loading="lazy">
+                </div>
+                <div class="news-card__content">
+                  <h3 class="news-card__title">Новая линейка промышленных кондиционеров</h3>
+                  <p class="news-card__text">
+                    Расширение ассортимента высокоэффективными решениями для крупных объектов.
+                  </p>
+                  <a href="#" class="news-card__link">
+                    Подробнее
+                    <svg class="news-card__link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      aria-hidden="true">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+    
+            </div>
+    
+            <!-- Режим СПИСОК: ссылки -->
+            <ul class="news__list">
+              <li class="news__list-item" data-category="projects">
+                <a href="#" class="news__list-link">
+                  Завершён проект инженерных систем для бизнес центра
+                  <svg class="news__list-link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </li>
+              <li class="news__list-item" data-category="technologies">
+                <a href="#" class="news__list-link">
+                  Внедрение новых технологий в инженерных системах
+                  <svg class="news__list-link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </li>
+              <li class="news__list-item" data-category="products">
+                <a href="#" class="news__list-link">
+                  Новая линейка промышленных кондиционеров
+                  <svg class="news__list-link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+    
+          </div>
+        </div>
+    
+      </div>
+    </section>    
+  </main>
+
+  <footer class="footer" role="contentinfo">
+  
+    <!-- Верхняя часть: Навигация и контакты -->
+    <div class="container footer__top">
+  
+      <!-- Логотип (белая версия) -->
+      <a href="/" class="logo footer__logo" aria-label="AMBIT — на главную">
+        <!-- SVG логотипа (белый) -->
+        <svg class="logo__icon" width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true">
+          <rect width="28" height="4" fill="#ffffff" />
+          <rect y="8" width="28" height="4" fill="#ffffff" />
+          <rect y="16" width="28" height="4" fill="#c8102e" />
+        </svg>
+        <span class="logo__text logo__text--white">AMBIT</span>
+      </a>
+  
+      <!-- Навигация -->
+      <nav class="nav footer__nav" aria-label="Навигация в подвале">
+        <ul class="nav__list footer__nav-list">
+          <li class="nav__item"><a href="#about" class="nav__link footer__nav-link">О нас</a></li>
+          <li class="nav__item"><a href="#news" class="nav__link footer__nav-link">Новости</a></li>
+          <li class="nav__item"><a href="#download" class="nav__link footer__nav-link">Скачать</a></li>
+          <li class="nav__item"><a href="#catalog" class="nav__link footer__nav-link">Каталог</a></li>
+          <li class="nav__item"><a href="#buy" class="nav__link footer__nav-link">Купить</a></li>
+          <li class="nav__item">
+            <button class="footer__search-btn" type="button" aria-label="Поиск">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+  
+      <!-- Контакты (Иконки) -->
+      <div class="footer__contacts">
+        <a href="tel:+78001234567" class="footer__contact-link" aria-label="Позвонить">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z">
+            </path>
+          </svg>
+        </a>
+        <a href="mailto:info@ambit.ru" class="footer__contact-link" aria-label="Написать на почту">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </a>
+        <a href="#" class="footer__contact-link" aria-label="Telegram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+          </svg>
+        </a>
+        <a href="#" class="footer__contact-link" aria-label="WhatsApp">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  
+    <!-- Красная разделительная линия -->
+    <div class="footer__separator"></div>
+  
+    <!-- Нижняя часть: Визуальная картинка здания -->
+    <div class="footer__visual">
+      <!-- Картинка здания (фон) -->
+      <div class="footer__visual-bg"></div>
+  
+      <!-- Текст на картинке (если нужен, по макету там просто линия) -->
+      <!-- В макете линия проходит по зданию, сделаем её через CSS -->
+    </div>
+  
+  </footer>
+
+</body>
+
+</html>
