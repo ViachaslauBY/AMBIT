@@ -58,7 +58,7 @@ button {
 }
 
 /* =========================================
-2. Accessibility
+   Accessibility
    ========================================= */
 .page__skip-link {
   position: absolute;
@@ -93,20 +93,20 @@ button {
 }
 
 /* =========================================
-   3. Container
+   Container
    ========================================= */
 .container {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 60px;
+  padding: 0 55px;
 }
 
 /* =========================================
-   4. HEADER (БЭМ)
+   HEADER
    ========================================= */
 .header {
-  padding: 55px 0 70px;
+  padding: 55px 0 67px;
   z-index: 100;
 }
 
@@ -117,7 +117,6 @@ button {
   gap: 1rem;
 }
 
-/* --- Logo --- */
 .header__logo {
   display: flex;
   align-items: center;
@@ -129,7 +128,6 @@ button {
   width: 100%;
 }
 
-/* --- Nav (desktop) --- */
 .header__nav {
   flex: 1;
   display: flex;
@@ -150,7 +148,7 @@ button {
   font-weight: 500;
   text-transform: uppercase;
   color: #353a3c;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
   transition: color 0.2s ease;
 }
 
@@ -175,7 +173,6 @@ button {
   width: 100%;
 }
 
-/* --- Actions (search + burger) --- */
 .header__actions {
   display: flex;
   margin-left: 35px;
@@ -236,7 +233,7 @@ button {
 
 /* Когда меню открыто */
 .header__mobile-menu--open {
-  transform: translateX(0); /* Выезжает на экран */
+  transform: translateX(0);
 }
 
 /* Overlay (затемнение фона) */
@@ -296,13 +293,12 @@ button {
   padding-left: 8px;
 }
 
-/* Бургер должен быть поверх меню */
 .header__burger {
   z-index: 100;
 }
 
 .hero {
-  padding: 0 0 40px;
+  padding: 0 0 226px;
 }
 
 .hero__container {
@@ -315,6 +311,7 @@ button {
 /* --- Слайдер --- */
 .hero__slider {
   position: relative;
+  margin-bottom: 17px;
   width: 100%;
   overflow: hidden;
 }
@@ -343,32 +340,31 @@ button {
   display: flex;
   flex-direction: column;
   max-width: 550px;
-  padding: 30px 0 0 0;
+  padding: 74px 0 0 0;
 }
 
 .hero__title {
-  margin-bottom: 27px;
+  margin-bottom: 32px;
   font-size: 74px;
-  /* font-size: clamp(32px, 5vw, 64px); */
   font-weight: 700;
   line-height: 1.1;
-  letter-spacing: -2.1px;
+  letter-spacing: -3px;
   text-transform: uppercase;
 }
 
 .hero__comma {
+  font-family: 'Times New Roman', Times, serif;
   color: #c8102e;
+  font-weight: 700;
 }
 
 .hero__description {
   max-width: 550px;
   font-size: 25px;
   letter-spacing: 1px;
-  /* font-size: clamp(14px, 1.5vw, 16px); */
   line-height: 1.2;
 }
 
-/* --- Изображение --- */
 .hero__image-wrapper {
   flex: 1;
   position: relative;
@@ -382,7 +378,7 @@ button {
   display: block;
 }
 
-/* --- Стрелки (PNG) --- */
+/* --- Стрелки  --- */
 .hero__arrow {
   position: absolute;
   top: 42%;
@@ -422,7 +418,6 @@ button {
   right: 0;
 }
 
-/* --- Панель --- */
 .hero__panel {
   display: flex;
   align-items: center;
@@ -434,87 +429,104 @@ button {
 .hero__panel-left {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 53px;
   flex-wrap: wrap;
+  padding: 0 0 0 65px;
 }
 
+/* Ссылка "Новости" */
 .hero__news-link {
   font-size: 12px;
   font-weight: 600;
-  letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: #1a1a1a;
+  color: #a3232c;
+  text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .hero__news-link:hover,
 .hero__news-link:focus-visible {
-  color: #c8102e;
+  color: #000;
 }
 
-.button {
+/* Кнопка "Изучить подход" со скосом */
+.hero__cta-button {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  padding: 16px 28px;
+  padding: 7px 16px;
   font-size: 13px;
   font-weight: 600;
-  letter-spacing: 1.5px;
   text-transform: uppercase;
-  border-radius: 0;
+  color: #eeeef2;
+  background-color: #a3232c;
+  text-decoration: none;
+  clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 100%, 12px 100%, 0 100%);
   transition:
     background-color 0.2s ease,
     transform 0.1s ease;
 }
 
-.button--primary {
-  background-color: #c8102e;
-  color: #ffffff;
+.hero__cta-button:hover,
+.hero__cta-button:focus-visible {
+  background-color: #c7213a;
 }
 
-.button--primary:hover,
-.button--primary:focus-visible {
-  background-color: #a00d24;
-}
-
-.button--primary:active {
+.hero__cta-button:active {
   transform: scale(0.98);
 }
 
-.button__icon {
+.hero__cta-icon {
   transition: transform 0.2s ease;
 }
 
-.button--primary:hover .button__icon {
+.hero__cta-button:hover .hero__cta-icon {
   transform: translateX(4px);
 }
 
-.hero__panel-right {
-  display: flex;
-  gap: 16px;
-}
-
-.hero__contact-link {
+.hero__socials {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  color: #1a1a1a;
-  background-color: transparent;
-  border-radius: 50%;
-  transition:
-    background-color 0.2s ease,
-    color 0.2s ease;
 }
 
-.hero__contact-link:hover,
-.hero__contact-link:focus-visible {
-  background-color: #c8102e;
-  color: #ffffff;
+.hero__social-link {
+  margin-top: -42px;
+  display: block;
+  width: 33px;
+  height: 33px;
+  background-image: url('../img/hero/icons.png');
+  background-repeat: no-repeat;
+  background-size: 130px 18px; /* точный размер спрайта */
+  border-radius: 50%;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.hero__social-link--phone {
+  background-position: 3px center;
+}
+
+.hero__social-link--email {
+  background-position: -32.5px center;
+}
+
+.hero__social-link--telegram {
+  background-position: -65px center;
+}
+
+.hero__social-link--whatsapp {
+  background-position: -97.5px center;
+}
+
+.hero__social-link:hover,
+.hero__social-link:focus-visible {
+  transform: scale(1.1);
+  opacity: 0.8;
 }
 
 .approach {
+  padding: 0 0 40px 0;
 }
 
 .approach__container {
@@ -563,6 +575,7 @@ button {
 }
 
 .features {
+  padding: 0 0 40px 0;
 }
 
 .features__container {
@@ -616,6 +629,7 @@ button {
 }
 
 .solutions {
+  padding: 0 0 40px 0;
 }
 
 .solutions__container {
@@ -791,6 +805,7 @@ button {
 }
 
 .products {
+  padding: 0 0 40px 0;
 }
 
 .products__container {
@@ -895,6 +910,7 @@ button {
 }
 
 .news-intro {
+  padding: 0 0 40px 0;
 }
 
 .news-intro__container {
@@ -942,6 +958,7 @@ button {
 }
 
 .news {
+  padding: 0 0 40px 0;
 }
 
 .news__container {
@@ -1584,16 +1601,24 @@ button {
   }
   .hero__panel {
     flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
+    align-items: center;
+    gap: 5px;
   }
+
   .hero__panel-left {
-    width: 100%;
-    justify-content: space-between;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    padding: 0 0 0 0px;
   }
-  .hero__panel-right {
+
+  .hero__socials {
     width: 100%;
-    justify-content: flex-start;
+    justify-content: center;
+  }
+
+  .hero__social-link {
+    margin-top: 0;
   }
 
   .approach {
@@ -1843,16 +1868,12 @@ button {
   }
   .hero__panel-left {
     flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
+    align-items: center;
   }
-  .button {
+
+  .hero__cta-button {
     width: 100%;
     justify-content: center;
-  }
-  .hero__contact-link {
-    width: 36px;
-    height: 36px;
   }
 
   .approach__title {
