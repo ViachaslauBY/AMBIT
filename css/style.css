@@ -514,7 +514,7 @@ button {
 }
 
 .hero__social-link--email {
-  background-position: -32.5px center;
+  background-position: -33px center;
 }
 
 .hero__social-link--telegram {
@@ -522,7 +522,7 @@ button {
 }
 
 .hero__social-link--whatsapp {
-  background-position: -97.5px center;
+  background-position: -99px center;
 }
 
 .hero__social-link:hover,
@@ -769,7 +769,7 @@ SOLUTIONS
 
 /* Правая часть: картинка */
 .solutions__image-wrapper {
-  flex: 0 0 579px;
+  /* flex: 0 0 579px; */
   width: 579px;
   position: relative;
 }
@@ -826,97 +826,40 @@ SOLUTIONS
 }
 
 /* =========================================
-   SEPARATOR
+  SECTION
    ========================================= */
-/* .solutions__separator {
-  width: 100%;
-  height: 1px;
-  background-color: #d1d1d1;
-  margin-top: 0;
-} */
-
-/* =========================================
-   ADAPTIVE (1024px)
-   ========================================= */
-@media (max-width: 1024px) {
-  .solutions {
-    padding: 60px 0;
-  }
-
-  .solutions__panel-inner {
-    flex-direction: column;
-    gap: 32px;
-  }
-
-  .solutions__left-content {
-    flex: none;
-    width: 100%;
-  }
-
-  .solutions__image-wrapper {
-    flex: none;
-    width: 100%;
-    max-width: 579px;
-  }
-
-  .solutions__stats {
-    flex-wrap: wrap; /* Разрешаем перенос на маленьких */
-    gap: 32px;
-  }
-
-  .stat-item__value {
-    font-size: 40px;
-  }
-
-  .solutions__title {
-    font-size: 32px;
-  }
-
-  .solutions__tabs {
-    gap: 24px;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-  }
-
-  .solutions__tabs::-webkit-scrollbar {
-    display: none;
-  }
-}
-
 .products {
-  padding: 0 0 40px 0;
+  padding: 0 0 80px 0;
 }
 
 .products__container {
   display: flex;
   flex-direction: column;
-  gap: 48px;
 }
 
-.products__list {
+/* =========================================
+   PRODUCTS CARDS (3 карточки)
+   ========================================= */
+.products__cards {
+  margin-bottom: 41px;
   display: flex;
-  gap: 32px;
-  justify-content: space-between;
+  gap: 44px;
 }
 
-/* --- Карточка продукта --- */
 .product-card {
   flex: 1;
   display: flex;
   flex-direction: column;
-  min-width: 0;
 }
 
 .product-card__image-wrapper {
   width: 100%;
-  margin-bottom: 24px;
   overflow: hidden;
 }
 
 .product-card__image {
   width: 100%;
-  height: 280px;
+  height: 295px; /* Было 380px, теперь 196px */
   object-fit: cover;
   display: block;
   transition: transform 0.4s ease;
@@ -929,41 +872,51 @@ SOLUTIONS
 .product-card__content {
   display: flex;
   flex-direction: column;
-  gap: 12px; /* Компактный отступ между элементами */
+  gap: 16px;
+  padding: 24px 0;
   flex: 1;
 }
 
 .product-card__title {
-  font-size: 16px;
+  margin-bottom: 40px;
+  text-align: left;
+  font-size: 25px;
   font-weight: 700;
-  line-height: 1.3;
+  line-height: 1.2;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
-  color: #1a1a1a;
-  margin: 0;
+  color: #384040;
 }
 
 .product-card__text {
-  font-size: 14px;
+  margin-bottom: 95px;
+  max-width: 325px;
+  font-size: 16px;
   line-height: 1.6;
-  color: #6b6b6b;
-  margin: 0;
-  font-weight: 400;
+  color: #384040;
+  flex: 1;
 }
 
-/* Ссылка "Подробнее" поднята ближе к тексту */
+/* Ссылка без фона */
 .product-card__link {
+  padding-left: 23px;
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  font-size: 13px;
-  font-weight: 700;
-  text-transform: uppercase;
+  gap: 24px;
+  font-size: 16px;
+  font-weight: 600;
   letter-spacing: 1px;
-  color: #c8102e;
+  text-transform: uppercase;
+  color: #1a1a1a;
   text-decoration: none;
-  margin-top: 8px; /* Небольшой отступ от текста */
-  transition: gap 0.2s ease;
+  transition:
+    color 0.2s ease,
+    gap 0.2s ease;
+  width: fit-content;
+}
+
+.product-card__link:hover,
+.product-card__link:focus-visible {
+  color: #c8102e;
 }
 
 .product-card__link:hover {
@@ -978,15 +931,96 @@ SOLUTIONS
   transform: translateX(4px);
 }
 
-/* --- Кнопка каталога --- */
+/* =========================================
+   PRODUCTS FOOTER (скошенная кнопка)
+   ========================================= */
 .products__footer {
   display: flex;
   justify-content: center;
-  margin-top: 16px;
 }
 
-.products__catalog-btn {
-  padding: 16px 32px;
+.products__cta-button {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  gap: 5px;
+  margin-bottom: 69px;
+  padding: 7px 10px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #eeeef2;
+  background-color: #a3232c;
+  text-decoration: none;
+  clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 100%, 12px 100%, 0 100%);
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+.products__cta-button:hover,
+.products__cta-button:focus-visible {
+  background-color: #a00d24;
+}
+
+.products__cta-button:active {
+  transform: scale(0.98);
+}
+
+.products__cta-icon {
+  transition: transform 0.2s ease;
+}
+
+.products__cta-button:hover .products__cta-icon {
+  transform: translateX(4px);
+}
+
+/* =========================================
+   PRODUCTS INFO (фото слева, текст справа)
+   ========================================= */
+.products__info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.products__image-wrapper {
+  width: 871px;
+  max-width: 100%;
+}
+
+.products__info-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.products__text-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 327px;
+}
+
+.products__title {
+  margin-bottom: 44px;
+  font-size: 63px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #384040;
+  line-height: 0.8;
+  text-align: right;
+}
+
+.products__description {
+  font-size: 26px;
+  line-height: 1.2;
+  color: #384040;
+  text-align: right;
+
+  font-weight: 400;
 }
 
 .news-intro {
@@ -1484,6 +1518,18 @@ SOLUTIONS
   .solutions__link {
     margin-bottom: 45px;
   }
+
+  .product-card__text {
+    margin-bottom: 64px;
+  }
+
+  .products__title {
+    font-size: 55px;
+  }
+
+  .products__description {
+    font-size: 20px;
+  }
 }
 
 /* =========================================
@@ -1576,10 +1622,15 @@ SOLUTIONS
   }
 
   .solutions {
-    padding: 0 0;
+    padding: 0 0 45px 0;
+  }
+
+  .solutions__panel-inner {
+    flex-direction: column;
   }
 
   .solutions__stats {
+    gap: 20px;
     justify-content: flex-start;
   }
 
@@ -1595,29 +1646,70 @@ SOLUTIONS
     font-size: 14px;
   }
 
-  .products {
-    padding: 60px 0;
-  }
-
-  .products__list {
-    flex-wrap: wrap;
-    gap: 24px;
+  /* Карточки в колонку на всю ширину */
+  .products__cards {
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 32px;
   }
 
   .product-card {
-    flex: 0 0 calc(50% - 12px); /* 2 карточки в ряд */
+    max-width: 100%;
+    width: 100%;
   }
 
-  .product-card:last-child {
-    flex: 0 0 calc(50% - 12px);
+  /* Адаптация шрифтов */
+  .products__title {
+    font-size: 48px;
+    text-align: left;
+    margin-bottom: 24px;
   }
 
-  .product-card__image {
-    height: 240px;
+  .product-card__text {
+    margin-bottom: 0;
+    max-width: 100%;
+  }
+
+  .product-card__link {
+    padding-left: 0;
+  }
+
+  /* Блок info в колонку */
+  .products__info {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  /* 1. Текст (заголовок и описание) идет ПЕРВЫМ */
+  .products__text-content {
+    order: 1;
+    width: 100%;
+    max-width: 100%;
+    text-align: left; /* Выравниваем по левому краю для колонки */
+  }
+
+  /* 2. Картинка идет ВТОРОЙ */
+  .products__image-wrapper {
+    order: 2;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .products__description {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .products__cta-button {
+    margin-bottom: 32px;
   }
 
   .news-intro {
     padding: 60px 0;
+  }
+
+  .product-card__title {
+    margin-bottom: 0px;
   }
 
   .news-intro__container {
@@ -1802,6 +1894,10 @@ SOLUTIONS
     font-size: 12px;
   }
 
+  .solutions__image {
+    max-width: 90%;
+  }
+
   .solutions__link {
     padding: 14px 28px 14px 24px;
     font-size: 12px;
@@ -1847,10 +1943,6 @@ SOLUTIONS
 
   .product-card__image {
     height: 220px;
-  }
-
-  .product-card__title {
-    font-size: 15px;
   }
 
   .product-card__text {
@@ -2076,8 +2168,8 @@ SOLUTIONS
     padding: 32px 0;
   }
 
-  .product-card__image {
-    height: 180px;
+  .products__cards {
+    margin-bottom: 0px;
   }
 
   .product-card__title {
@@ -2086,6 +2178,10 @@ SOLUTIONS
 
   .product-card__text {
     font-size: 12px;
+  }
+
+  .products__title {
+    font-size: 35px;
   }
 
   .product-card__link {

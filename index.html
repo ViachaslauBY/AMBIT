@@ -446,15 +446,14 @@
     <section class="products" aria-labelledby="products-title">
       <div class="container products__container">
     
-        <h2 id="products-title" class="visually-hidden">Каталог продукции</h2>
-    
-        <div class="products__list">
+        <!-- Три карточки -->
+        <div class="products__cards">
     
           <!-- Карточка 1 -->
           <article class="product-card">
             <div class="product-card__image-wrapper">
-              <img src="img/products/products-1.png" alt="Презентационные кондиционеры в серверной" class="product-card__image"
-                width="400" height="300" loading="lazy">
+              <img src="img/products/product-1.png" alt="Презентационные кондиционеры" class="product-card__image" width="415" height="295"
+                loading="lazy">
             </div>
             <div class="product-card__content">
               <h3 class="product-card__title">Презентационные кондиционеры</h3>
@@ -463,20 +462,21 @@
               </p>
               <a href="#" class="product-card__link">
                 Подробнее
-                <svg class="product-card__link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
+                <svg class="product-card__link-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="19" viewBox="0 0 25 19"
+                  fill="none" aria-hidden="true">
+                  <path d="M0 9.5H22" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                  <path d="M17 2L24 9.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
                 </svg>
               </a>
             </div>
           </article>
-    
+          
           <!-- Карточка 2 -->
           <article class="product-card">
             <div class="product-card__image-wrapper">
-              <img src="img/products/products-2.png" alt="Центральные кондиционеры с вентиляторами" class="product-card__image"
-                width="400" height="300" loading="lazy">
+              <img src="img/products/product-2.png" alt="Центральные кондиционеры" class="product-card__image" width="415" height="295"
+                loading="lazy">
             </div>
             <div class="product-card__content">
               <h3 class="product-card__title">Центральные кондиционеры</h3>
@@ -485,20 +485,20 @@
               </p>
               <a href="#" class="product-card__link">
                 Подробнее
-                <svg class="product-card__link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
+                <svg class="product-card__link-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="19" viewBox="0 0 25 19"
+                  fill="none" aria-hidden="true">
+                  <path d="M0 9.5H22" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                  <path d="M17 2L24 9.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
                 </svg>
               </a>
             </div>
           </article>
-    
+          
           <!-- Карточка 3 -->
           <article class="product-card">
             <div class="product-card__image-wrapper">
-              <img src="img/products/products-3.png" alt="Чиллеры с воздушным охлаждением" class="product-card__image" width="400"
-                height="300" loading="lazy">
+              <img src="img/products/product-3.png" alt="Чиллеры с воздушным охлаждением" class="product-card__image" width="415" height="295" loading="lazy">
             </div>
             <div class="product-card__content">
               <h3 class="product-card__title">Чиллеры с воздушным охлаждением</h3>
@@ -507,28 +507,44 @@
               </p>
               <a href="#" class="product-card__link">
                 Подробнее
-                <svg class="product-card__link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
+                <svg class="product-card__link-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="19" viewBox="0 0 25 19"
+                  fill="none" aria-hidden="true">
+                  <path d="M0 9.5H22" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                  <path d="M17 2L24 9.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
                 </svg>
               </a>
             </div>
           </article>
-    
         </div>
     
-        <!-- Кнопка каталога -->
+        <!-- Скошенная ссылка -->
         <div class="products__footer">
-          <a href="#catalog" class="button button--primary products__catalog-btn">
+          <a href="#catalog" class="products__cta-button">
             Смотреть весь каталог
-            <svg class="button__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            <svg class="products__cta-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <line x1="5" y1="12" x2="19" y2="12"></line>
               <polyline points="12 5 19 12 12 19"></polyline>
             </svg>
           </a>
         </div>
+    
+        <!-- Блок с фото и текстом -->
+        <div class="products__info">
+          <div class="products__image-wrapper">
+            <img src="img/products/product.png" alt="Инженерное оборудование и системы" class="products__info-image"
+              width="871" height="380" loading="lazy">
+          </div>
+          <div class="products__text-content">
+            <h2 id="products-title" class="products__title">Новости</h2>
+            <p class="products__description">
+              Реализованные проекты, технические решения и событиями компани.
+            </p>
+          </div>
+        </div>    
+        
+        <div class="separator"></div>
     
       </div>
     </section>
@@ -612,7 +628,7 @@
               <!-- Карточка 1: Проекты -->
               <article class="news-card" data-category="projects">
                 <div class="news-card__image-wrapper">
-                  <img src="img/news/news-1.png" alt="Завершён проект инженерных систем для бизнес центра"
+                  <img src="img/news/new-1.png" alt="Завершён проект инженерных систем для бизнес центра"
                     class="news-card__image" width="400" height="300" loading="lazy">
                 </div>
                 <div class="news-card__content">
@@ -635,7 +651,7 @@
               <!-- Карточка 2: Технологии -->
               <article class="news-card" data-category="technologies">
                 <div class="news-card__image-wrapper">
-                  <img src="img/news/news-2.png" alt="Внедрение новых технологий в инженерных системах" class="news-card__image"
+                  <img src="img/news/new-2.png" alt="Внедрение новых технологий в инженерных системах" class="news-card__image"
                     width="400" height="300" loading="lazy">
                 </div>
                 <div class="news-card__content">
@@ -658,7 +674,7 @@
               <!-- Карточка 3: Продукты -->
               <article class="news-card" data-category="products">
                 <div class="news-card__image-wrapper">
-                  <img src="img/news/news-3.png" alt="Новая линейка промышленных кондиционеров" class="news-card__image"
+                  <img src="img/news/new-3.png" alt="Новая линейка промышленных кондиционеров" class="news-card__image"
                     width="400" height="300" loading="lazy">
                 </div>
                 <div class="news-card__content">
