@@ -200,10 +200,8 @@
               целом.
             </p>
           </div>
-        </div>
-    
-        <div class="separator"></div>
-    
+        </div>    
+        <div class="separator"></div>    
       </div>
     </section>
 
@@ -275,134 +273,172 @@
         <div class="separator"></div>
       </div>
     </section>
-
+    
     <section class="solutions" aria-labelledby="solutions-title">
       <div class="container solutions__container">
     
-        <!-- Содержимое табов -->
-        <div class="solutions__tabs-content">
+        <!-- Контент табов -->
+        <div class="solutions__content">
     
           <!-- Таб 1: Все решения -->
-          <div class="solutions-tab solutions-tab--active" id="tab-all" role="tabpanel" aria-labelledby="link-all">
-            <div class="solutions-tab__stats">
-              <div class="stat-item">
-                <span class="stat-item__value">15+</span>
-                <span class="stat-item__label">лет опыта</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-item__value">250+</span>
-                <span class="stat-item__label">реализованных объектов</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-item__value">100+</span>
-                <span class="stat-item__label">инженеров и специалистов</span>
-              </div>
-            </div>
+          <div class="solutions__panel solutions__panel--active" role="tabpanel" id="tab-all" aria-labelledby="tab-all-btn">
+            <div class="solutions__panel-inner">
+              <div class="solutions__left-content">
+                <div class="solutions__stats">
+                  <div class="stat-item">
+                    <span class="stat-item__value">15+</span>
+                    <span class="stat-item__label">лет опыта</span>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-item__value">250+</span>
+                    <span class="stat-item__label">реализованных объектов</span>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-item__value">100+</span>
+                    <span class="stat-item__label">инженеров и специалистов</span>
+                  </div>
+                </div>
     
-            <div class="solutions-tab__info">
-              <div class="solutions-tab__text-content">
-                <a href="#" class="solutions-tab__link">Смотреть решения</a>
-                <h2 id="solutions-title" class="solutions-tab__title">Решения для разных задач</h2>
-                <p class="solutions-tab__description">
+                <a href="#" class="solutions__link">
+                  Смотреть решения
+                  <svg class="solutions__link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+    
+                <h2 id="solutions-title" class="solutions__title">Решения для разных задач</h2>
+                <p class="solutions__description">
                   Инженерные решения формируются под условия конкретного объекта и сценарии его эксплуатации. Коммерческая,
                   промышленная и инфраструктурная недвижимость отличаются характером нагрузок и требованиями к инженерной
                   логике.
                 </p>
               </div>
-              <div class="solutions-tab__image-wrapper">
-                <img src="img/solutions/solutions.png" alt="Серверное оборудование и инженерные системы"
-                  class="solutions-tab__image" width="600" height="450" loading="lazy">
+    
+              <div class="solutions__image-wrapper">
+                <img src="img/solutions/solutions.png" alt="Инженерные системы и оборудование" class="solutions__image" width="579"
+                  height="380" loading="lazy">
               </div>
             </div>
           </div>
     
           <!-- Таб 2: Коммерческие объекты -->
-          <div class="solutions-tab" id="tab-commercial" role="tabpanel" aria-labelledby="link-commercial">
-            <div class="solutions-tab__stats">
-              <div class="stat-item">
-                <span class="stat-item__value">50+</span>
-                <span class="stat-item__label">бизнес-центров</span>
+          <div class="solutions__panel" role="tabpanel" id="tab-commercial" aria-labelledby="tab-commercial-btn" hidden>
+            <div class="solutions__panel-inner">
+              <div class="solutions__left-content">
+                <div class="solutions__stats">
+                  <div class="stat-item"><span class="stat-item__value">50+</span><span
+                      class="stat-item__label">бизнес-центров</span></div>
+                  <div class="stat-item"><span class="stat-item__value">30+</span><span class="stat-item__label">торговых
+                      центров</span></div>
+                  <div class="stat-item"><span class="stat-item__value">98%</span><span class="stat-item__label">довольных
+                      клиентов</span></div>
+                </div>
+                <a href="#" class="solutions__link">
+                  Подробнее о коммерции
+                  <svg class="solutions__link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+                <h2 class="solutions__title">Коммерческие объекты</h2>
+                <p class="solutions__description">Инженерные решения формируются под условия конкретного объекта и сценарии его эксплуатации. Коммерческая,
+                промышленная и инфраструктурная недвижимость отличаются характером нагрузок и требованиями к инженерной
+                логике.</p>
               </div>
-              <div class="stat-item">
-                <span class="stat-item__value">30+</span>
-                <span class="stat-item__label">ТЦ и ритейла</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-item__value">98%</span>
-                <span class="stat-item__label">эффективность</span>
-              </div>
-            </div>
-    
-            <div class="solutions-tab__info">
-              <div class="solutions-tab__text-content">
-                <a href="#" class="solutions-tab__link">Подробнее о коммерции</a>
-                <h2 class="solutions-tab__title">Коммерческие объекты</h2>
-                <p class="solutions-tab__description">
-                  Создание комфортной среды для посетителей и сотрудников. Оптимизация энергопотребления и гибкое управление
-                  климатом в зданиях любого назначения.
-                </p>
-              </div>
-              <div class="solutions-tab__image-wrapper">
-                <img src="img/solutions/solutions.png" alt="Коммерческий объект, вентиляция" class="solutions-tab__image"
-                  width="600" height="450" loading="lazy">
+              <div class="solutions__image-wrapper">
+                <img src="img/solutions/solutions.png" alt="Коммерческие объекты" class="solutions__image" width="579" height="380"
+                  loading="lazy">
               </div>
             </div>
           </div>
     
           <!-- Таб 3: Промышленность -->
-          <div class="solutions-tab" id="tab-industrial" role="tabpanel" aria-labelledby="link-industrial">
-            <div class="solutions-tab__stats">
-              <div class="stat-item">
-                <span class="stat-item__value">100+</span>
-                <span class="stat-item__label">заводов</span>
+          <div class="solutions__panel" role="tabpanel" id="tab-industrial" aria-labelledby="tab-industrial-btn" hidden>
+            <div class="solutions__panel-inner">
+              <div class="solutions__left-content">
+                <div class="solutions__stats">
+                  <div class="stat-item"><span class="stat-item__value">100+</span><span
+                      class="stat-item__label">производственных объектов</span></div>
+                  <div class="stat-item"><span class="stat-item__value">0</span><span class="stat-item__label">аварийных
+                      ситуаций</span></div>
+                  <div class="stat-item"><span class="stat-item__value">24/7</span><span class="stat-item__label">мониторинг
+                      систем</span></div>
+                </div>
+                <a href="#" class="solutions__link">
+                  Промышленные решения
+                  <svg class="solutions__link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+                <h2 class="solutions__title">Промышленные объекты</h2>
+                <p class="solutions__description">Инженерные решения формируются под условия конкретного объекта и сценарии его эксплуатации. Коммерческая,
+                промышленная и инфраструктурная недвижимость отличаются характером нагрузок и требованиями к инженерной
+                логике.</p>
               </div>
-              <div class="stat-item">
-                <span class="stat-item__value">0</span>
-                <span class="stat-item__label">аварий</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-item__value">24/7</span>
-                <span class="stat-item__label">мониторинг</span>
+              <div class="solutions__image-wrapper">
+                <img src="img/solutions/solutions.png" alt="Промышленное оборудование" class="solutions__image" width="579"
+                  height="380" loading="lazy">
               </div>
             </div>
+          </div>
     
-            <div class="solutions-tab__info">
-              <div class="solutions-tab__text-content">
-                <a href="#" class="solutions-tab__link">Промышленные решения</a>
-                <h2 class="solutions-tab__title">Промышленность</h2>
-                <p class="solutions-tab__description">
-                  Надежные системы для производственных процессов. Контроль параметров среды, безопасность и бесперебойная
-                  работа оборудования.
-                </p>
+          <!-- Таб 4: Инфраструктура -->
+          <div class="solutions__panel" role="tabpanel" id="tab-infra" aria-labelledby="tab-infra-btn" hidden>
+            <div class="solutions__panel-inner">
+              <div class="solutions__left-content">
+                <div class="solutions__stats">
+                  <div class="stat-item"><span class="stat-item__value">75+</span><span
+                      class="stat-item__label">инфраструктурных проектов</span></div>
+                  <div class="stat-item"><span class="stat-item__value">15</span><span class="stat-item__label">лет
+                      работы</span></div>
+                  <div class="stat-item"><span class="stat-item__value">100%</span><span
+                      class="stat-item__label">соответствие стандартам</span></div>
+                </div>
+                <a href="#" class="solutions__link">
+                  Инфраструктурные решения
+                  <svg class="solutions__link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+                <h2 class="solutions__title">Инфраструктура</h2>
+                <p class="solutions__description">Инженерные решения формируются под условия конкретного объекта и сценарии его эксплуатации. Коммерческая,
+                промышленная и инфраструктурная недвижимость отличаются характером нагрузок и требованиями к инженерной
+                логике.</p>
               </div>
-              <div class="solutions-tab__image-wrapper">
-                <img src="img/solutions/solutions.png" alt="Промышленное оборудование" class="solutions-tab__image" width="600"
-                  height="450" loading="lazy">
+              <div class="solutions__image-wrapper">
+                <img src="img/solutions/solutions.png" alt="Инфраструктурные объекты" class="solutions__image" width="579"
+                  height="380" loading="lazy">
               </div>
             </div>
           </div>
     
         </div>
     
-        <!-- Навигация табов -->
-        <div class="solutions__tabs-nav" role="tablist" aria-label="Категории решений">
-          <button class="solutions__tab-link solutions__tab-link--active" id="link-all" role="tab" aria-controls="tab-all"
-            aria-selected="true" tabindex="0">
-            Все решения
-          </button>
-          <button class="solutions__tab-link" id="link-commercial" role="tab" aria-controls="tab-commercial"
-            aria-selected="false" tabindex="-1">
-            Коммерческие объекты
-          </button>
-          <button class="solutions__tab-link" id="link-industrial" role="tab" aria-controls="tab-industrial"
-            aria-selected="false" tabindex="-1">
-            Промышленность
-          </button>
-          <button class="solutions__tab-link" id="link-infra" role="tab" aria-controls="tab-infra" aria-selected="false"
-            tabindex="-1">
-            Инфраструктура
-          </button>
-        </div>
+        <!-- Табы (названия) -->
+        <div class="solutions__tabs" role="tablist" aria-label="Категории решений">
+          <button class="solutions__tab solutions__tab--active" role="tab" aria-selected="true" aria-controls="tab-all"
+            id="tab-all-btn" type="button">Все решения</button>
+          <button class="solutions__tab" role="tab" aria-selected="false" aria-controls="tab-commercial"
+            id="tab-commercial-btn" type="button">Коммерческие объекты</button>
+          <button class="solutions__tab" role="tab" aria-selected="false" aria-controls="tab-industrial"
+            id="tab-industrial-btn" type="button">Промышленность</button>
+          <button class="solutions__tab" role="tab" aria-selected="false" aria-controls="tab-infra" id="tab-infra-btn"
+            type="button">Инфраструктура</button>
+          <div class="solutions__tab-indicator" aria-hidden="true"></div>
+        </div>    
+        
+        <div class="separator"></div>
     
       </div>
     </section>
