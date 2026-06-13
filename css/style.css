@@ -826,10 +826,10 @@ SOLUTIONS
 }
 
 /* =========================================
-  SECTION
+  PRODUCTS
    ========================================= */
 .products {
-  padding: 0 0 80px 0;
+  padding: 0 0 40px 0;
 }
 
 .products__container {
@@ -1023,94 +1023,92 @@ SOLUTIONS
   font-weight: 400;
 }
 
-.news-intro {
-  padding: 0 0 40px 0;
-}
-
-.news-intro__container {
-  display: flex;
-  align-items: center;
-  gap: 60px;
-}
-
-/* --- Изображение --- */
-.news-intro__image-wrapper {
-  flex: 0 0 60%;
-  width: 60%;
-}
-
-.news-intro__image {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-}
-
-/* --- Контент (текст) --- */
-.news-intro__content {
-  flex: 0 0 35%;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.news-intro__title {
-  font-size: 48px;
-  font-weight: 900;
-  line-height: 1.1;
-  text-transform: uppercase;
-  color: #1a1a1a;
-  margin: 0;
-}
-
-.news-intro__description {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #6b6b6b;
-  margin: 0;
-  font-weight: 400;
-}
-
 .news {
-  padding: 0 0 40px 0;
+  padding: 0 0 95px 0;
 }
 
 .news__container {
   display: flex;
   flex-direction: column;
-  gap: 40px;
 }
 
-/* --- Верхняя панель --- */
-.news__header {
+/* =========================================
+   NEWS BODY (навигация слева + контент справа)
+   ========================================= */
+.news__body {
+  display: flex;
+  align-items: stretch;
+  gap: 25px; /* Нвигация растягивается на всю высоту */
+}
+
+/* =========================================
+   NEWS FILTERS (левая навигация — на всю высоту)
+   ========================================= */
+.news__filters {
+  flex: 0 0 180px;
+  align-self: stretch;
+}
+
+.news__filter-list {
+  list-style: none;
+  margin: 0;
+  padding: 24px 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid #d1d1d1;
+  box-sizing: border-box;
+}
+
+.news__filter-list li {
+  margin: 0;
+}
+
+.news__filter-btn {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  flex-wrap: wrap;
-  padding-bottom: 24px;
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.news__header-left {
-  flex: 0 0 auto;
-}
-
-.news__all-link {
+  gap: 12px;
+  width: 100%;
+  padding: 12px 24px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #1a1a1a;
   background: none;
   border: none;
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #c8102e;
   cursor: pointer;
-  padding: 0;
-  transition: opacity 0.2s ease;
+  text-align: left;
+  transition: color 0.2s ease;
 }
 
-.news__all-link:hover {
-  opacity: 0.7;
+.news__filter-btn:hover {
+  color: #c8102e;
+}
+
+.news__filter-btn--active {
+  color: #c8102e;
+  font-weight: 600;
+}
+
+/* =========================================
+   NEWS RIGHT (правая часть: сортировка + карточки)
+   ========================================= */
+.news__right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+/* =========================================
+   NEWS HEADER (сортировка и вид)
+   ========================================= */
+.news__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 27px;
 }
 
 .news__header-center {
@@ -1120,16 +1118,14 @@ SOLUTIONS
 }
 
 .news__sort-label {
-  font-size: 13px;
+  font-size: 14px;
   color: #999999;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
 }
 
 .news__sort-btn {
   background: none;
   border: none;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
   color: #999999;
   cursor: pointer;
@@ -1142,8 +1138,8 @@ SOLUTIONS
 }
 
 .news__sort-btn--active {
-  color: #1a1a1a;
-  font-weight: 700;
+  color: #c8102e;
+  font-weight: 600;
 }
 
 .news__header-right {
@@ -1154,7 +1150,7 @@ SOLUTIONS
 .news__view-btn {
   background: none;
   border: none;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
   color: #999999;
   cursor: pointer;
@@ -1168,83 +1164,50 @@ SOLUTIONS
 
 .news__view-btn--active {
   color: #c8102e;
-  font-weight: 700;
+  font-weight: 600;
 }
 
-/* --- Основной контент --- */
-.news__body {
-  display: flex;
-  gap: 40px;
-}
-
-/* --- Фильтры (левое меню) --- */
-.news__filters {
-  flex: 0 0 200px;
-}
-
-.news__filter-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  list-style: none;
-}
-
-.news__filter-btn {
-  background: none;
-  border: none;
-  font-size: 14px;
-  font-weight: 500;
-  color: #1a1a1a;
-  cursor: pointer;
-  padding: 0;
-  text-align: left;
-  transition: color 0.2s ease;
-}
-
-.news__filter-btn:hover {
-  color: #c8102e;
-}
-
-.news__filter-btn--active {
-  color: #c8102e;
-  font-weight: 700;
-}
-
-/* --- Контент новостей --- */
+/* =========================================
+   NEWS CONTENT
+   ========================================= */
 .news__content {
   flex: 1;
 }
 
-/* Режим СЕТКА */
+/* =========================================
+   NEWS GRID (сетка)
+   ========================================= */
 .news__grid {
   display: flex;
+  gap: 40px;
   flex-wrap: wrap;
-  gap: 32px;
 }
 
 .news__grid--hidden {
-  display: none;
+  display: none !important;
 }
 
-.news-card {
-  flex: 0 0 calc(33.333% - 22px);
+/* Карточка: треть ширины, но не больше 400px */
+.news__grid .news-card {
+  flex: 1 1 calc(33.333% - 27px);
+  max-width: 400px;
   display: flex;
   flex-direction: column;
 }
 
 .news-card--hidden {
-  display: none;
+  display: none !important;
 }
 
 .news-card__image-wrapper {
   width: 100%;
-  margin-bottom: 16px;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .news-card__image {
   width: 100%;
-  height: 240px;
+  height: 196px;
   object-fit: cover;
   display: block;
   transition: transform 0.4s ease;
@@ -1257,24 +1220,23 @@ SOLUTIONS
 .news-card__content {
   display: flex;
   flex-direction: column;
-  gap: 12px;
   flex: 1;
 }
 
 .news-card__title {
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 700;
   line-height: 1.3;
   text-transform: uppercase;
   color: #1a1a1a;
-  margin: 0;
+  margin-bottom: 65px;
 }
 
 .news-card__text {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.6;
   color: #6b6b6b;
-  margin: 0;
+  margin-bottom: 127px;
   flex: 1;
 }
 
@@ -1283,13 +1245,14 @@ SOLUTIONS
   align-items: center;
   gap: 8px;
   font-size: 13px;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-weight: 600;
   letter-spacing: 1px;
+  text-transform: uppercase;
   color: #c8102e;
   text-decoration: none;
-  margin-top: 8px;
   transition: gap 0.2s ease;
+  width: fit-content;
+  margin-top: auto;
 }
 
 .news-card__link:hover {
@@ -1304,46 +1267,55 @@ SOLUTIONS
   transform: translateX(4px);
 }
 
-/* Режим СПИСОК */
+/* =========================================
+   NEWS LIST (список)
+   ========================================= */
 .news__list {
-  display: none;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
   flex-direction: column;
-  gap: 0;
 }
 
 .news__list--visible {
-  display: flex;
+  display: flex !important;
 }
 
 .news__list-item {
   border-bottom: 1px solid #e5e5e5;
 }
 
+.news__list-item:first-child {
+  border-top: 1px solid #e5e5e5;
+}
+
 .news__list-item--hidden {
-  display: none;
+  display: none !important;
 }
 
 .news__list-link {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #c8102e;
-  text-decoration: none;
+  gap: 24px;
   padding: 20px 0;
-  transition: gap 0.2s ease;
+  text-decoration: none;
+  color: #1a1a1a;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
 }
 
 .news__list-link:hover {
-  gap: 24px;
+  color: #c8102e;
 }
 
 .news__list-link-icon {
   flex-shrink: 0;
+  color: #c8102e;
   transition: transform 0.2s ease;
 }
 
@@ -1351,132 +1323,187 @@ SOLUTIONS
   transform: translateX(4px);
 }
 
-.footer {
-  background-color: #111111;
-  color: #ffffff;
+/* =========================================
+   FOOTER
+   ========================================= */
+.footer__container {
+  padding-top: 60px;
+  max-width: 100%;
+  width: 1440px;
+  height: 594px;
+  background-image: url('../img/footer/footer.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   position: relative;
-}
-
-/* --- Верхняя часть (Навигация) --- */
-.footer__top {
+  position: relative;
+  z-index: 1;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 40px 0;
-  min-height: 100px;
+  align-items: flex-start;
+  gap: 40px;
 }
 
-/* Логотип в футере */
+/* =========================================
+   FOOTER LEFT (логотип)
+   ========================================= */
+.footer__left {
+  flex: 0 0 auto;
+}
+
+.footer__logo-link {
+  display: block;
+  transition: opacity 0.2s ease;
+}
+
+.footer__logo-link:hover {
+  opacity: 0.8;
+}
+
 .footer__logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
+  display: block;
+  max-width: 150px;
+  height: auto;
 }
 
-.logo__text--white {
-  color: #ffffff;
-}
-
-/* Навигация в футере */
-.footer__nav {
+/* =========================================
+   FOOTER CENTER (навигация + поиск)
+   ========================================= */
+.footer__center {
   flex: 1;
   display: flex;
+  align-items: center;
   justify-content: center;
+  gap: 32px;
 }
 
 .footer__nav-list {
-  display: flex;
-  align-items: center;
-  gap: 32px;
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .footer__nav-link {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 500;
-  letter-spacing: 1px;
-  text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   transition: color 0.2s ease;
-  opacity: 0.8;
 }
 
 .footer__nav-link:hover,
 .footer__nav-link:focus-visible {
-  color: #ffffff;
-  opacity: 1;
+  color: #c8102e;
 }
 
-/* Кнопка поиска в футере */
 .footer__search-btn {
   background: none;
   border: none;
-  color: #ffffff;
   cursor: pointer;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  opacity: 0.8;
-  transition: opacity 0.2s ease;
-}
-
-.footer__search-btn:hover,
-.footer__search-btn:focus-visible {
-  opacity: 1;
-}
-
-/* Контакты в футере */
-.footer__contacts {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.footer__contact-link {
+  padding: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  opacity: 0.8;
   transition:
-    opacity 0.2s ease,
-    color 0.2s ease;
+    color 0.2s ease,
+    transform 0.2s ease;
 }
 
-.footer__contact-link:hover,
-.footer__contact-link:focus-visible {
-  opacity: 1;
+.footer__search-btn:hover {
   color: #c8102e;
+  transform: scale(1.1);
 }
 
-/* --- Разделительная линия --- */
-.footer__separator {
-  width: 100%;
-  height: 4px;
-  background-color: #c8102e; /* Красная линия из макета */
+.footer__search-icon {
+  display: block;
 }
 
-/* --- Визуальная часть (Картинка здания) --- */
-.footer__visual {
-  position: relative;
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
+/* =========================================
+   FOOTER SOCIALS (социальные сети)
+   ========================================= */
+.footer__socials {
+  flex: 0 0 auto;
+  display: flex;
+  gap: 0;
+  align-items: center;
 }
 
-.footer__visual-bg {
-  width: 100%;
-  height: 100%;
-  background-image: url('../img/footer/footer.png'); /* Замените на реальное фото здания */
-  background-size: cover;
-  background-position: center;
+/* Базовый стиль для каждой иконки-ссылки */
+.footer__social-link {
+  display: block;
+  width: 54px; /* 216px / 4 иконки = 54px */
+  height: 30px;
+  background-image: url('../img/footer/footer-sot.png');
   background-repeat: no-repeat;
-  /* Если картинки нет, будет серый фон */
-  background-color: #222;
+  background-size: 216px 30px;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.footer__social-link:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+/* Позиционирование каждой иконки в спрайте */
+.footer__social-link--phone {
+  background-position: 0 0; /* 1-я иконка */
+}
+
+.footer__social-link--email {
+  background-position: -54px 0; /* 2-я иконка */
+}
+
+.footer__social-link--telegram {
+  background-position: -108px 0; /* 3-я иконка */
+}
+
+.footer__social-link--whatsapp {
+  background-position: -162px 0; /* 4-я иконка */
+}
+
+/* =========================================
+   FOOTER — Adaptive (1024px)
+   ========================================= */
+@media (max-width: 1024px) {
+  .footer {
+    padding: 32px 0;
+  }
+
+  .footer__container {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .footer__left {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer__center {
+    flex: 0 0 100%;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer__nav-list {
+    gap: 24px;
+  }
+
+  .footer__socials {
+    flex: 0 0 100%;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 1280px) {
@@ -1895,7 +1922,7 @@ SOLUTIONS
   }
 
   .solutions__image {
-    max-width: 90%;
+    max-width: 50%;
   }
 
   .solutions__link {
@@ -2002,30 +2029,30 @@ SOLUTIONS
     font-size: 14px;
   }
 
-  .footer__top {
-    flex-direction: column;
-    gap: 32px;
-    padding: 32px 0;
-    text-align: center;
+  .footer__nav-link {
+    font-size: 13px;
   }
 
-  .footer__nav {
-    width: 100%;
-    justify-content: center;
+  .footer__logo {
+    max-width: 120px;
   }
 
-  .footer__nav-list {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px 24px;
+  .footer__social-link {
+    width: 45px;
+    height: 25px;
+    background-size: 180px 25px;
   }
 
-  .footer__contacts {
-    gap: 24px;
+  .footer__social-link--email {
+    background-position: -45px 0;
   }
 
-  .footer__visual {
-    height: 250px;
+  .footer__social-link--telegram {
+    background-position: -90px 0;
+  }
+
+  .footer__social-link--whatsapp {
+    background-position: -135px 0;
   }
 }
 
@@ -2165,7 +2192,7 @@ SOLUTIONS
   }
 
   .products {
-    padding: 32px 0;
+    padding: 0 0;
   }
 
   .products__cards {
@@ -2191,50 +2218,6 @@ SOLUTIONS
   .products__catalog-btn {
     width: 100%;
     justify-content: center;
-  }
-
-  .news-intro {
-    padding: 32px 0;
-  }
-
-  .news-intro__container {
-    gap: 24px;
-  }
-
-  .news-intro__title {
-    font-size: 28px;
-  }
-
-  .news-intro__description {
-    font-size: 14px;
-  }
-
-  .news {
-    padding: 32px 0;
-  }
-
-  .news__filter-list {
-    gap: 16px;
-  }
-
-  .news__filter-btn {
-    font-size: 13px;
-  }
-
-  .news-card__image {
-    height: 180px;
-  }
-
-  .news-card__title {
-    font-size: 14px;
-  }
-
-  .news-card__text {
-    font-size: 12px;
-  }
-
-  .news__list-link {
-    font-size: 13px;
   }
 
   .footer__top {
