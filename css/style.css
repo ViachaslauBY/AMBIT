@@ -1149,7 +1149,7 @@ SOLUTIONS
 }
 
 .news__sort-btn:hover {
-  color: #1a1a1a;
+  color: #c8102e;
 }
 
 .news__sort-btn--active {
@@ -1175,7 +1175,7 @@ SOLUTIONS
 }
 
 .news__view-btn:hover {
-  color: #1a1a1a;
+  color: #c8102e;
 }
 
 .news__view-btn--active {
@@ -1347,7 +1347,7 @@ SOLUTIONS
   max-width: 100%;
   width: 1440px;
   height: 594px;
-  background-image: url('../img/footer/footer.png');
+  background-image: url('../img/footer/footer.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1485,41 +1485,6 @@ SOLUTIONS
 
 .footer__social-link--whatsapp {
   background-position: -162px 0; /* 4-я иконка */
-}
-
-/* =========================================
-   FOOTER — Adaptive (1024px)
-   ========================================= */
-@media (max-width: 1024px) {
-  .footer {
-    padding: 32px 0;
-  }
-
-  .footer__container {
-    flex-wrap: wrap;
-    gap: 24px;
-  }
-
-  .footer__left {
-    flex: 0 0 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .footer__center {
-    flex: 0 0 100%;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .footer__nav-list {
-    gap: 24px;
-  }
-
-  .footer__socials {
-    flex: 0 0 100%;
-    justify-content: center;
-  }
 }
 
 @media (max-width: 1280px) {
@@ -1810,12 +1775,35 @@ SOLUTIONS
     margin-bottom: 75px;
   }
 
+  .footer {
+    padding: 32px 0 0 0;
+  }
+
   .footer__container {
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
     height: auto;
     padding: 35px;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .footer__left {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer__center {
+    flex: 0 0 100%;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer__socials {
+    flex: 0 0 100%;
+    justify-content: center;
   }
 
   .footer__nav-list {
@@ -2255,7 +2243,7 @@ SOLUTIONS
 
   .solutions__stats {
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 35px;
   }
 
   .solutions__left-content {
@@ -2297,7 +2285,7 @@ SOLUTIONS
   }
 
   .products {
-    padding: 0 0;
+    padding: 0 0 25px 0;
   }
 
   .products__container {
@@ -2361,6 +2349,10 @@ SOLUTIONS
 
   .news-card__title {
     margin-bottom: 10px;
+  }
+
+  .news__header-center {
+    gap: 5px;
   }
 
   .news-card__text {
