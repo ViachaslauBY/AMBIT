@@ -361,8 +361,10 @@ button {
 }
 
 .hero__title {
+  margin: 0;
+  margin-top: 50px;
   margin-bottom: 32px;
-  font-size: 72px;
+  font-size: 71px;
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -3px;
